@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?guermonprez\.org$ [NC]
+RewriteRule ^(.*)$ https://www.guermonprez.eu/$1 [R=301,L]
