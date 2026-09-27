@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/ [NC]
-RewriteCond %{HTTP_HOST} ^(www\.)?guermonprez\.org$ [NC]
-RewriteRule ^(.*)$ https://www.guermonprez.eu/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^(www\.|paul\.)?guermonprez\.(eu|org|net)$ [NC]
+RewriteRule ^(.*)$ https://guermonprez.github.io/$1 [R=301,L]
